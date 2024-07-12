@@ -1,0 +1,7 @@
+PUT http://192.168.11.184:8040/api/research/test/_stream_load
+Authorization: Basic root hadoop
+timeout: 3000
+column_separator: ,
+label: 111
+
+< test.csv
