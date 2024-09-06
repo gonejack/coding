@@ -7,12 +7,12 @@ import (
 
 func insertionSort[T cmp.Ordered](arr []T) []T {
 	for i, v := range arr {
-		p := i - 1
-		for p >= 0 && arr[p] > v {
-			arr[p+1] = arr[p]
-			p -= 1
+		x := i - 1
+		for x >= 0 && arr[x] > v {
+			arr[x+1] = arr[x]
+			x -= 1
 		}
-		arr[p+1] = v
+		arr[x+1] = v
 	}
 	return arr
 }
